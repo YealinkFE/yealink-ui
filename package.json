@@ -1,0 +1,46 @@
+{
+  "name": "yealink-ui",
+  "description": "vue2 yealink ui components library",
+  "version": "1.0.0",
+  "author": "YealinkFE",
+  "private": false,
+  "main": "dist/yealink-ui.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot --config build/webpack.dev.config.js",
+    "dist:style": "gulp --gulpfile build/build-style.js",
+    "dist:prod": "webpack --progress --hide-modules --config build/webpack.prod.config.js",
+    "dist": "npm run dist:style && npm run dist:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YealinkFE/yealink-ui"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.5",
+    "eslint": "^4.5.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.2.0",
+    "file-loader": "^0.11.2",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "vue": "^2.4.2",
+    "vue-loader": "^13.0.2",
+    "vue-template-compiler": "^2.4.2",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.6.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
