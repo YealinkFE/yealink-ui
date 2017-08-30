@@ -1,7 +1,10 @@
 import Input from './components/input';
+import { Select, Option } from './components/select';
 
 const components = {
-    Input
+    Input,
+    Select,
+    Option: Option
 };
 
 const install = function (Vue) {
@@ -14,4 +17,4 @@ if (typeof window !== 'undefined' && window.Vue) {
     install(window.Vue);
 }
 
-export default Object.assign(components, {install});
+export default Object.assign(components, { install });

@@ -1,0 +1,67 @@
+.yl-select {
+
+    &-selection {
+        display: block;
+        background-color: #fff;
+        border: 1px solid $border-nor-color;
+        border-radius: $border-radius-base;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+
+        &:hover {
+            border-color: $border-hover-color;
+        }
+    }
+
+    &-placeholder, &-selected-value {
+        display: block;
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-left: 8px;
+        padding-right: 24px;
+    }
+
+    &-placeholder {
+        color: $placeholder-color;
+    }
+
+    &-visible &-selection{
+        border-color: $border-click-color;
+    }
+
+    &-dropdown {
+        position: absolute;
+        width: inherit;
+        max-height: 200px;
+        overflow: auto;
+        margin: 5px 0;
+        padding: 5px 0;
+        background-color: #fff;
+        box-shadow: $shadow; 
+        border-radius: $border-radius-base;
+
+        .yl-select-item {
+            margin: 0;
+            line-height: normal;
+            padding: 7px 16px;
+            clear: both;
+            color: #333;
+            list-style: none;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #ebeff5;
+            }
+
+            &.yl-select-item-selected {
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
+    }
+}
